@@ -2,37 +2,24 @@ package com.test;
 
 import jakarta.persistence.*;
 @Entity
-@Table(name="StudentDetail")
-public class Student {
+@Table(name="Student_Detail")
+public class Student1st {
  
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int serialNo;
 	private int studentId;
 	private int studentAge;
 	private String studentName;
 	private String studentAddress;
-	@Embedded
-	private Certificate cert;
 	
-	public Student(int serialNo, int studentId, int studentAge, String studentName, String studentAddress,
-			Certificate cert) {
+	public Student1st(int studentId, int studentAge, String studentName, String studentAddress) {
 		super();
-		this.serialNo = serialNo;
 		this.studentId = studentId;
 		this.studentAge = studentAge;
 		this.studentName = studentName;
 		this.studentAddress = studentAddress;
-		this.cert = cert;
 	}
-	public Student() {
+	public Student1st() {
 		super();
-	}
-	public int getSerialNo() {
-		return serialNo;
-	}
-	public void setSerialNo(int serialNo) {
-		this.serialNo = serialNo;
 	}
 	public int getStudentId() {
 		return studentId;
@@ -57,12 +44,6 @@ public class Student {
 	}
 	public void setStudentAddress(String studentAddress) {
 		this.studentAddress = studentAddress;
-	}
-	public Certificate getCert() {
-		return cert;
-	}
-	public void setCert(Certificate cert) {
-		this.cert = cert;
 	}
 	 
 }

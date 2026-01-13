@@ -1,18 +1,18 @@
-package com.test;
+package com.embadable;
 
 import jakarta.persistence.*;
 
 @Embeddable
-public class Certificate {
+public class Certificate2nd {
 
 	private int certiNo;
 	private String certiName;
 	private String course;
-	public Certificate() {
+	public Certificate2nd() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Certificate(int certiNo, String certiName, String course) {
+	public Certificate2nd(int certiNo, String certiName, String course) {
 		super();
 		this.certiNo = certiNo;
 		this.certiName = certiName;

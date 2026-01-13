@@ -13,8 +13,11 @@ public class FetchDemo {
 		SessionFactory factory = cfg.buildSessionFactory();
 		Session session = factory.openSession();
 		
-		Student s=session.get(Student.class,6);
+		Student1st s=session.get(Student1st.class,1244);
 		System.out.println("Student Name : "+s.getStudentName()+"\n"+"Student Age : "+s.getStudentAge());
+	
+		Certificate1st ct=session.get(Certificate1st.class,2);
+		System.out.println("Student Name : "+ct.getStudentName()+"\n"+"Certificate Name : "+ct.getCertiName());
 	
 		session.close();
 		factory.close();
