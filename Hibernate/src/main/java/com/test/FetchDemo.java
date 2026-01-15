@@ -9,14 +9,14 @@ public class FetchDemo {
 	public static void main(String[] args) {
 		
 		Configuration cfg=new Configuration(); 
-		cfg.configure("com/test/hiber.cfg.xml");
+		cfg.configure("com/test/test.cfg.xml");
 		SessionFactory factory = cfg.buildSessionFactory();
 		Session session = factory.openSession();
 		
-		Student1st s=session.get(Student1st.class,1244);
+		Student s=session.get(Student.class,1248);
 		System.out.println("Student Name : "+s.getStudentName()+"\n"+"Student Age : "+s.getStudentAge());
 	
-		Certificate1st ct=session.get(Certificate1st.class,2);
+		Certificate ct=session.get(Certificate.class,2);
 		System.out.println("Student Name : "+ct.getStudentName()+"\n"+"Certificate Name : "+ct.getCertiName());
 	
 		session.close();

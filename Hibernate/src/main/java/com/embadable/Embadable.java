@@ -5,49 +5,49 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class MergerClass {
+public class Embadable {
 	
     public static void main(String[] args) {
 
         Configuration cfg = new Configuration();
-        cfg.configure("com/embadable/hiber.cfg.xml");
+        cfg.configure("com/embadable/embaded.cfg.xml");
         SessionFactory factory = cfg.buildSessionFactory(); 
         Session session = factory.openSession();
         Transaction tx = session.beginTransaction();
 
 		/* Student Class Object */
         
-        Student2nd st1=new Student2nd();
+        Student st1=new Student();
         st1.setStudentId(1244);
         st1.setStudentAge(23);
         st1.setStudentName("Mohsin khan");
         st1.setStudentAddress("Mumbai Sakinaka Kaju pada");
         
-        Student2nd st2=new Student2nd();
+        Student st2=new Student();
         st2.setStudentId(1245);
         st2.setStudentAge(22);
         st2.setStudentName("Raiyyan khan");
         st2.setStudentAddress("Uttar Pradesh Semariyawan");
         
-        Student2nd st3=new Student2nd();
+        Student st3=new Student();
         st3.setStudentId(1246);
         st3.setStudentAge(25);
         st3.setStudentName("Zuhaib khan");
         st3.setStudentAddress("Mumbai Sakinaka Wajid Ali compound");
         
-        Student2nd st4=new Student2nd();
+        Student st4=new Student();
         st4.setStudentId(1247);
         st4.setStudentAge(19);
         st4.setStudentName("Faheem khan");
         st4.setStudentAddress("Uttar pradesh Mahuari sant kabir nagar");
         
-        Student2nd st5=new Student2nd();
+        Student st5=new Student();
         st5.setStudentId(1248);
         st5.setStudentAge(20);
         st5.setStudentName("Hashim Ansari");
         st5.setStudentAddress("Mumbai sakinaka Wajid Ali compound ");
         
-        Student2nd st6=new Student2nd();
+        Student st6=new Student();
         st6.setStudentId(1249);
         st6.setStudentAge(17);
         st6.setStudentName("Rani Ansari");
@@ -55,32 +55,32 @@ public class MergerClass {
 
 		/* Certificate Class Object */
         
-        Certificate2nd c1=new Certificate2nd();
+        Certificate c1=new Certificate();
         c1.setCertiNo(987655);
         c1.setCertiName("Software Developer");
         c1.setCourse("Full Stack Java Developer");
         
-        Certificate2nd c2=new Certificate2nd();
+        Certificate c2=new Certificate();
         c2.setCertiNo(987656);
         c2.setCertiName("Software Developer");
         c2.setCourse("Full Stack Java Developer");
         
-        Certificate2nd c3=new Certificate2nd();
+        Certificate c3=new Certificate();
         c3.setCertiNo(987657);
         c3.setCertiName("Software Developer");
         c3.setCourse("Full Stack Java Developer");
         
-        Certificate2nd c4=new Certificate2nd();
+        Certificate c4=new Certificate();
         c4.setCertiNo(987658);
         c4.setCertiName("Software Developer");
         c4.setCourse("Full Stack Java Developer");
         
-        Certificate2nd c5=new Certificate2nd();
+        Certificate c5=new Certificate();
         c5.setCertiNo(987659);
         c5.setCertiName("Software Developer");
         c5.setCourse("Full Stack Java Developer");
         
-        Certificate2nd c6=new Certificate2nd();
+        Certificate c6=new Certificate();
         c6.setCertiNo(987660);
         c6.setCertiName("Software Developer");
         c6.setCourse("Full Stack Java Developer");

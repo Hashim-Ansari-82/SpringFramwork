@@ -5,8 +5,8 @@ import java.util.Date;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="Certificate_Detail")
-public class Certificate1st {
+@Table
+public class Certificate {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,12 +17,13 @@ public class Certificate1st {
 	private String studentName;
 	@Temporal(TemporalType.DATE)
 	private Date date;
+	@Lob
 	private byte[] image;
-	public Certificate1st() {
+	public Certificate() {
 		super();
 	}
 
-	public Certificate1st(int serialId, int certiNo, String certiName, String course, String studentName, Date date,
+	public Certificate(int serialId, int certiNo, String certiName, String course, String studentName, Date date,
 			byte[] image) {
 		super();
 		this.serialId = serialId;

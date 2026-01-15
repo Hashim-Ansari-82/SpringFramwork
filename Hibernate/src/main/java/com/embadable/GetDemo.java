@@ -9,15 +9,15 @@ public class GetDemo {
 	public static void main(String[] args) {
 		
 		Configuration cfg=new Configuration(); 
-		cfg.configure("com/embadable/hiber.cfg.xml");
+		cfg.configure("com/embadable/embaded.cfg.xml");
 		SessionFactory factory = cfg.buildSessionFactory();
 		Session session = factory.openSession();
 		
-		Student2nd st=session.get(Student2nd.class,1245);
+		Student st=session.get(Student.class,2);
 		System.out.println("Student Name : "+st.getStudentName()+"\n"+"Student Age : "+st.getStudentAge());
 	
-		Company co=session.get(Company.class,2342);
-		System.out.println("Company Name : "+co.getCompName()+"\n"+"Company Emp : "+co.getEmp());
+		Company co=session.get(Company.class,3);
+		System.out.println("Company Name : "+co.getCompName()+"\n"+"Company Emp : "+co.getCompId());
 		
 		session.close();
 		factory.close();
