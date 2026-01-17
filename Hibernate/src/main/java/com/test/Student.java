@@ -2,17 +2,19 @@ package com.test;
 
 import jakarta.persistence.*;
 @Entity
-@Table
 public class Student {
  
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int serialNo;
 	private int studentId;
 	private int studentAge;
 	private String studentName;
 	private String studentAddress;
 	
-	public Student(int studentId, int studentAge, String studentName, String studentAddress) {
+	public Student(int serialNo, int studentId, int studentAge, String studentName, String studentAddress) {
 		super();
+		this.serialNo = serialNo;
 		this.studentId = studentId;
 		this.studentAge = studentAge;
 		this.studentName = studentName;
@@ -44,6 +46,17 @@ public class Student {
 	}
 	public void setStudentAddress(String studentAddress) {
 		this.studentAddress = studentAddress;
+	}
+	@Override
+	public String toString() {
+		return "Student [serialNo=" + serialNo + ", studentId=" + studentId + ", studentAge=" + studentAge
+				+ ", studentName=" + studentName + ", studentAddress=" + studentAddress + "]";
+	}
+	public int getSerialNo() {
+		return serialNo;
+	}
+	public void setSerialNo(int serialNo) {
+		this.serialNo = serialNo;
 	}
 	 
 }

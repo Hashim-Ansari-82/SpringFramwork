@@ -2,6 +2,7 @@ package com.onetoone;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
@@ -13,7 +14,7 @@ public class QuestionSheet {
 	@Column(name = "QuestionId")
 	private int quesNo;
 	private String question; 
-    @OneToOne
+    @OneToOne(mappedBy = "qs",fetch = FetchType.EAGER)
     @JoinColumn(name = "AnswerNo")
 	private AnswerSheet as;
 	

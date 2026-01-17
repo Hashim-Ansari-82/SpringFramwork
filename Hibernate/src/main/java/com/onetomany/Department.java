@@ -3,6 +3,7 @@ package com.onetomany;
 import java.util.List;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
  
@@ -11,7 +12,7 @@ public class Department {
     
 	@Id
 	private String department;
-	@OneToMany(mappedBy = "depart")
+	@OneToMany(mappedBy = "depart",fetch = FetchType.EAGER)
 	private List<Employee> emp;
 
 	public Department(String department, List<Employee> emp) {
@@ -39,5 +40,4 @@ public class Department {
 	public void setEmp(List<Employee> emp) {
 		this.emp = emp;
 	}
-	
 }

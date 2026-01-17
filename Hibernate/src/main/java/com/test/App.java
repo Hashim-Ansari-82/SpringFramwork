@@ -53,9 +53,33 @@ public class App {
         
         Student s6=new Student();
         s6.setStudentId(1249);
-        s6.setStudentAge(17);
-        s6.setStudentName("Rani Ansari");
+        s6.setStudentAge(23);
+        s6.setStudentName("Sharukh Khan ");
         s6.setStudentAddress("Nallasopara east Maharastra");
+        
+        Student s7=new Student();
+        s7.setStudentId(1250);
+        s7.setStudentAge(22);
+        s7.setStudentName("Arsalan Pathan");
+        s7.setStudentAddress("Mumbai metro sakinaka 90ft");
+        
+        Student s8=new Student();
+        s8.setStudentId(1251);
+        s8.setStudentAge(19);
+        s8.setStudentName("Hamza Khan");
+        s8.setStudentAddress("Maharastra 90ft road saki naka ");
+        
+        Student s9=new Student();
+        s9.setStudentId(1252);
+        s9.setStudentAge(21);
+        s9.setStudentName("Salim Ansari");
+        s9.setStudentAddress("Maharastra mumbai Sakinaka");
+        
+        Student s10=new Student();
+        s10.setStudentId(1253);
+        s10.setStudentAge(25);
+        s10.setStudentName("Moiz Khan");
+        s10.setStudentAddress("Saki naka 90ft Road Mumbai");
 
 		/* Certificate Class Object */
         
@@ -139,6 +163,10 @@ public class App {
         session.persist(s4);
         session.persist(s5);
         session.persist(s6);
+        session.persist(s7);
+        session.persist(s8);
+        session.persist(s9);
+        session.persist(s10);
         
         tx.commit();
         session.close();
