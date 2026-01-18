@@ -69,11 +69,6 @@ public class OneToMany {
 		list.add(emp5);
 
 		session.persist(dp);
-		session.persist(emp1);
-		session.persist(emp2);
-		session.persist(emp3);
-		session.persist(emp4);
-		session.persist(emp5); 
 
 		for (Employee emp : list) {
 			emp.setDepart(dp);

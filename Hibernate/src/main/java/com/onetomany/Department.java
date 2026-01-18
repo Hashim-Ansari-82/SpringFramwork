@@ -2,6 +2,7 @@ package com.onetomany;
 
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
@@ -12,7 +13,7 @@ public class Department {
     
 	@Id
 	private String department;
-	@OneToMany(mappedBy = "depart",fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "depart",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 	private List<Employee> emp;
 
 	public Department(String department, List<Employee> emp) {
