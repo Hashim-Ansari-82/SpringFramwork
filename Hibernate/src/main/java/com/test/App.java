@@ -12,7 +12,7 @@ import org.hibernate.cfg.Configuration;
 public class App {
 
     public static void main(String[] args) throws IOException {
-
+    	
         Configuration cfg = new Configuration();
         cfg.configure("com/test/test.cfg.xml");
         SessionFactory factory = cfg.buildSessionFactory(); 

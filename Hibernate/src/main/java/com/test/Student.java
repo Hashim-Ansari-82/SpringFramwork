@@ -1,7 +1,14 @@
 package com.test;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 import jakarta.persistence.*;
+
 @Entity
+
+@Cacheable
+@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
+ 
 public class Student {
  
 	@Id

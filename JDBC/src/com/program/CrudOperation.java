@@ -142,7 +142,8 @@ public class CrudOperation {
 			System.out.println("\n<---------------------- Choose any option ------------------>\n");
 			System.out  
 					.println("\n1. Create Database  \t2. Create Table \t3. Insert Values \n\n"
-							+ "4. Update Values  \t5. Delete Values  \t6. Fetch Table");
+							+ "4. Update Values  \t5. Delete Values  \t6. Fetch Tablel\n");
+			System.out.println("                        7.Exit Button");
 			choice = sc.nextInt();
 			switch (choice) {
 			case 1:
@@ -164,8 +165,8 @@ public class CrudOperation {
 				fetchTable();
 				break;
 			}
-		} while (choice != 0);
-		System.out.println("<------------- Updation Successfully ------------->");
+		} while (choice !=7);
+		System.out.println("<-------------Transaction Successfully ------------->");
 		sc.close();
 		
 	}

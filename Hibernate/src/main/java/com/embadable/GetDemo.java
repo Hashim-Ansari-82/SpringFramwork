@@ -15,12 +15,14 @@ public class GetDemo {
 		
 		Student st=session.get(Student.class,2);
 		System.out.println("Student Name : "+st.getStudentName()+"\n"+"Student Age : "+st.getStudentAge());
+		
+		Student st1=session.get(Student.class,2);
+		System.out.println("Student Name : "+st1.getStudentName()+"\n"+"Student Age : "+st1.getStudentAge());
 	
 		Company co=session.get(Company.class,3);
 		System.out.println("Company Name : "+co.getCompName()+"\n"+"Company Emp : "+co.getCompId());
 		
 		session.close();
 		factory.close();
-		
 	}
 }

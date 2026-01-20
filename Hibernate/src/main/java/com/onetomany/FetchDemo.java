@@ -19,6 +19,12 @@ public class FetchDemo {
 		System.out.println(e.getEmpName());
 		System.out.println(e.getDepart().getEmp());
 		
+		Employee e1=session.get(Employee.class,435);
+		System.out.println(e1.getEmpAddr());
+		System.out.println(e1.getEmpId());
+		System.out.println(e1.getEmpName());
+		System.out.println(e1.getDepart().getEmp());
+		
 		session.close();
 		factory.close();
 	}

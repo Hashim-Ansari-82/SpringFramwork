@@ -18,7 +18,7 @@ public class CascadingTest {
 		Transaction tx = session.beginTransaction();
 		
 		Department d1 = new Department();
-		d1.setDepartment("Networ marketing");
+		d1.setDepartment("Network Marketing");
 		
 		Employee emp = new Employee();
 		emp.setEmpName("irfan");

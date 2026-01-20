@@ -21,6 +21,7 @@ public class Certificate {
 	private byte[] image;
 	public Certificate() {
 		super();
+		
 	}
 
 	public Certificate(int serialId, int certiNo, String certiName, String course, String studentName, Date date,
