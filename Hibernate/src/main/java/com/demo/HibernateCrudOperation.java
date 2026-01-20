@@ -9,7 +9,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class CrudOperation {
+public class HibernateCrudOperation {
 	
 	static BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 	static int choice=0;

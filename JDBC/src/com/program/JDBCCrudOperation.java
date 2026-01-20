@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException; 
 import java.util.Scanner;
 
-public class CrudOperation {
+public class JDBCCrudOperation {
 
 	private static String url = "jdbc:mysql://localhost:3306/", pass = "root", username = "root";
 	private static String url1 = "jdbc:mysql://localhost:3306/Department";
@@ -29,17 +29,7 @@ public class CrudOperation {
 			System.out.println("\n<---------- Created Database Failed --------------->");
 		}
 		con.close();
-	}              /* Use Database */
-	
-	/*
-	 * public static void useDatabase() throws SQLException { String
-	 * useDB="use Department"; Connection con =
-	 * DriverManager.getConnection(url1,username,pass); PreparedStatement ps=
-	 * con.prepareStatement(useDB); ps.execute(); System.out.
-	 * println("\n<------------- Use database Successfullly ------------->");
-	 * con.close(); } Create Table
-	 */
-
+	}
 	public static void createTable() throws SQLException {
 		String tablename = "create table "+tableName+"(Rollno int Primary key,name varchar(50),C Varchar(50),Cplus varchar(50),Java Varchar(50),DBMS varchar(50))";
 	Connection con = DriverManager.getConnection(url1, username, pass);
