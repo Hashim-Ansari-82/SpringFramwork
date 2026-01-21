@@ -125,7 +125,6 @@ public class HibernateCrudOperation {
 				    System.out.println("Enter New Name");
 					String name1=br.readLine();
 					s.setStuName(name1);
-					System.out.println("Updated Successfully.....!");
 					System.out.println("Enter new Address");
 			    	String address1=br.readLine();
 			    	s.setStuAddress(address1);
@@ -138,7 +137,6 @@ public class HibernateCrudOperation {
 				   System.out.println("Enter new Address");
 			    	String address2=br.readLine();
 			    	s.setStuAddress(address2);
-			    	System.out.println("Updated Successfully.....!"); 
 			    	System.out.println("Ente New Age");
 			    	int age1=Integer.parseInt(br.readLine());
 			    	s.setStuAge(age1);
@@ -151,7 +149,6 @@ public class HibernateCrudOperation {
 				   System.out.println("Enter New Name");
 					String name2=br.readLine();
 					s.setStuName(name2);
-					System.out.println("Updated Successfully.....!");
 					System.out.println("Ente New Age");
 			    	int age2=Integer.parseInt(br.readLine());
 			    	s.setStuAge(age2);
@@ -164,7 +161,6 @@ public class HibernateCrudOperation {
 				   System.out.println("Enter new Address");
 			    	String address3=br.readLine();
 			    	s.setStuAddress(address3);
-			    	System.out.println("Updated Successfully.....!");
 			    	System.out.println("Ente New Department");
 			    	String department2=br.readLine();
 			    	s.setStuDepartment(department2);
@@ -177,7 +173,6 @@ public class HibernateCrudOperation {
 				 System.out.println("Ente New Department");
 			    	String department3=br.readLine(); 
 			    	s.setStuDepartment(department3);
-			    	System.out.println("Updated Successfully.....!");
 			    	System.out.println("Ente New Age");
 			    	int age3=Integer.parseInt(br.readLine());
 			    	s.setStuAge(age3); 
