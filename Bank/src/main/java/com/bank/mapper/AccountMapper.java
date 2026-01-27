@@ -17,7 +17,7 @@ public class AccountMapper {
      }
      public static AccountDTO entityToDTO(Account account) {
     	 
-    	 Account acc=new Account();
+    	 AccountDTO acc=new AccountDTO();
     	 
     	 acc.setAccountNo(account.getAccountNo());
     	 acc.setAccountType(account.getAccountType());
