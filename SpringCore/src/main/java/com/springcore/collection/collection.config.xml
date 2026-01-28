@@ -45,6 +45,17 @@
 			</map>
 		</property>
 		
+	<property name="prop">
+	     <props>
+	        <prop key="12">Hashim Ansari"</prop>
+	        <prop key="13">Arsalan Khan</prop>
+	        <prop key="14">Raiyyan Khan</prop>
+	        <prop key="15">Atamas Khan</prop>
+	        <prop key="16">Zuhaib Khan</prop>
+	    </props>
+  </property>
+
+		
 	</bean>
 	
 </beans>
