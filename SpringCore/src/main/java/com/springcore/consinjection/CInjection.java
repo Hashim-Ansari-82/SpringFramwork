@@ -12,4 +12,3 @@ public class CInjection {
 		System.out.println(p);
 	}
 }
-x

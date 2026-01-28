@@ -23,13 +23,12 @@
 		<constructor-arg>
 			<list>
 				<value>Java Developer</value>
-				<value>Paython Developer</value>
+				<value>Python Developer</value>
 				<value>Java Script Developer</value>
 				<value>CSS Programing Language</value>
 			</list>
 		</constructor-arg>
 	</bean>
-    
     
       <!--c:personId="12"
       c:personName="Hashim Ansari"
