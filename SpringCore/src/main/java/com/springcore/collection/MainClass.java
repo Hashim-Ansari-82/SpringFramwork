@@ -3,7 +3,7 @@ package com.springcore.collection;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.ApplicationContext;
 
-public class Collection {
+public class MainClass {
 
 	public static void main(String[] args) {
 		

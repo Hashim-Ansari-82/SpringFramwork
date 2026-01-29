@@ -3,7 +3,7 @@ package com.springcore.refrence;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.ApplicationContext;
 
-public class Refrence {
+public class MainClass {
  
 	public static void main(String[] args) {
 		ApplicationContext context1 = new ClassPathXmlApplicationContext("com/springcore/refrence/refrence.config.xml");

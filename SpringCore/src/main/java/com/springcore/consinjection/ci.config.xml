@@ -41,4 +41,9 @@
      
 	</bean>-->
 	
+	<bean class = "com.springcore.consinjection.Addition" name="add">
+		<constructor-arg value ="12" type = "double" index="1"/>
+		<constructor-arg value ="32" type = "double" index="0"/>
+	</bean>
+	
 </beans>

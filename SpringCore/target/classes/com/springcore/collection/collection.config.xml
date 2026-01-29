@@ -11,7 +11,7 @@
   
     <bean class = "com.springcore.collection.Employee" name = "emp1" >
 		
-        <!--Value tag based Injection-->
+          <!--Value tag based Injection-->
 		
 		<property name="name" value = "Hashim Ansari"/>
 		<property name="phones">
@@ -37,11 +37,11 @@
 		
 		<property name="courses">
 			<map>
-				<entry key="Java " value=" 12 Month"/>
-				<entry key="Python " value=" 10 Month"/>
-				<entry key="HTML " value=" 2 Month"/>
-				<entry key="CSS " value=" 3 Month"/>
-				<entry key="Java Script " value=" 8 Month"/>
+				<entry key="Java" value=" 12 Month"/>
+				<entry key="Python" value=" 10 Month"/>
+				<entry key="HTML" value=" 2 Month"/>
+				<entry key="CSS" value=" 3 Month"/>
+				<entry key="Java Script" value=" 8 Month"/>
 			</map>
 		</property>
 		
@@ -54,7 +54,6 @@
 	        <prop key="16">Zuhaib Khan</prop>
 	    </props>
   </property>
-
 		
 	</bean>
 	
