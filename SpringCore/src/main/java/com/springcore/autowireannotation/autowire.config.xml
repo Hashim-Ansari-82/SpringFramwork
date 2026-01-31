@@ -9,19 +9,21 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
   
-  <bean class="com.springcore.refrence.Lion" name="lion1" 
-   p:name = "Afghani lion " p:propertie = "Lion is the king of forest" />
+   <context:annotation-config/>
    
-   <bean class = "com.springcore.refrence.Forest" name = "forest"
-    p:name="Amazon Jungle"
-	p:lion ="Lion is roar"
- 	p:lion-ref="lion1" 
- 	p:pond="Beautifull Pond"/>
-    
-	 <!--  <property name="pond" value="This is Beautifull pond"/>
-	   <property name="name" value="Amazon Forest"/>
-	   <property name="lion" ><ref bean="lion"/></property>
-	   <property name="lion" ref="lion1"/>
-   </bean>   -->
-	
+    <bean class = "com.springcore.autowireannotation.Company" name = "company1">
+		
+		<property name="name" value="Core Banking company"/>
+		<property name="id" value="346425"/>
+		
+	</bean>
+    <bean class = "com.springcore.autowireannotation.Company" name = "company2">
+		
+		<property name="name" value="Mobile Banking company"/>
+		<property name="id" value="346435"/>
+		
+	</bean>
+   
+	<bean class = "com.springcore.autowireannotation.Employee" name="employee"/>
+		
 </beans>
