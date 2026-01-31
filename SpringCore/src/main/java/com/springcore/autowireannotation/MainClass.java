@@ -8,14 +8,12 @@ public class MainClass {
 	public static void main(String[] args) {
 	
 	ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/autowireannotation/autowire.config.xml");
-	Employee bean = context.getBean("employee",Employee.class);
+	
+	 Employee bean = context.getBean("employee",Employee.class);
 	 System.out.println(bean);
-	 
 		
-		/*
-		 * Company bean1 = context.getBean("company",Company.class);
-		 * System.out.println(bean1);
-		 */
-		 
+	 Company bean1 = context.getBean("company1",Company.class);
+	 System.out.println(bean1);	 
+		  
 	}
 }
