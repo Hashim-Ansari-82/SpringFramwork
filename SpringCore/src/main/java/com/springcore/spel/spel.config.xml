@@ -12,12 +12,6 @@
            http://www.springframework.org/schema/util
            http://www.springframework.org/schema/util/spring-util.xsd"> 
     
-    <util:list list-class="java.util.ArrayList" id="list">
-			 <value>32</value>
-			 <value>43</value>
-			 <value>34</value>
-			 <value>35</value>
-	</util:list>   
-    <context:component-scan base-package="com.springcore.stereotype"/>
+    <context:component-scan base-package="com.springcore.spel"/>
     
 </beans>

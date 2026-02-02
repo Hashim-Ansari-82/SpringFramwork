@@ -17,12 +17,10 @@ public class Employee {
 		System.out.println("Setting by Method");
 		this.company = company;
 	}
-
 	@Override
 	public String toString() {
 		return "Employee [company=" + company + "]";
 	}
-	
 	public Employee(Company company) {
 		super();
 		System.out.println("Setting by Constructor");
