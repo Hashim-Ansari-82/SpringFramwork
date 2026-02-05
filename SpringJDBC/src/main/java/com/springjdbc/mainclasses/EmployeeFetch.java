@@ -11,13 +11,14 @@ import com.springjdbc.entites.Employee;
 public class EmployeeFetch {
 
 	public static void main(String[] args) {
-		 System.out.println("<----------- Employee Data ------------>");
-		 AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class);	
-		 EmployeeDao dao = context.getBean("emp",EmployeeDao.class);
-		  List<Employee> fetch = dao.fetch();
-		  fetch.forEach(list ->{
-			  System.out.println(list);
-		  });
-		  System.out.println("\n<----------- Data Fetch Succesfully ------------->");
-	  }
+	
+		System.out.println("<---------- Show Data From Employee ----------->");
+		AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(JavaConfig.class);
+		EmployeeDao dao = context.getBean("emp",EmployeeDao.class);
+     List<Employee> emp = dao.fetch();
+     emp.forEach( list->{
+    	 System.out.println(list);
+     });
+     System.out.println("<------------- Fetch Succesfully --------------->");
+	}
 }

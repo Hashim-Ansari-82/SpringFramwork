@@ -4,6 +4,7 @@ import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -14,6 +15,7 @@ import com.springjdbc.daoimpl.EmployeeDaoImp;
 import com.springjdbc.daoimpl.StudentDaoImp;
 
 @Configuration
+@ComponentScan(basePackages = {"com.springjdbc.daoimpl"})
 public class JavaConfig {
  
 		@Bean("ds")
@@ -31,16 +33,16 @@ public class JavaConfig {
 			jdbcTemplate.setDataSource(getDataSource());	
 			return jdbcTemplate;
 		}
-		@Bean("student")
+		@Bean("studentDao")
 		public StudentDao getStudentDao() {
 			StudentDaoImp student =new StudentDaoImp();
 			student.setTemplate(getTemplate());
 			return student;
 		}
-		@Bean("emp")
-		public EmployeeDao getEmployeeDao() {
-			EmployeeDaoImp emp =new EmployeeDaoImp();
-			emp.setJdbcTemplate(getTemplate());
-			return emp;
-		}
+//		@Bean("emp")
+//		public EmployeeDao getEmployeeDao() {
+//			EmployeeDaoImp emp =new EmployeeDaoImp();
+//			emp.setJdbcTemplate(getTemplate());
+//			return emp;
+//		}
 }

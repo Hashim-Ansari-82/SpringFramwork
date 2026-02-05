@@ -60,8 +60,8 @@ public class StudentCrudOpe {
 					  System.out.println("<------------------- Enter Student Id ------------------->");
 					  int id =Integer.parseInt(br.readLine());
 			         
-			         int insert = studentDao.delete(id);
-			         if(insert>0) {
+			         int delete = studentDao.delete(id);
+			         if(delete>0) {
 						  System.out.println("Deleted Successfully ☑️✅✔️✅☑️ ");
 						  }
 						  else {
