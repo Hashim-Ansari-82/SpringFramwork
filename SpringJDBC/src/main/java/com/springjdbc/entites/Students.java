@@ -1,7 +1,7 @@
 package com.springjdbc.entites;
 
 public class Students {
-
+													/* Insert Operation*/
 			private int id;
 			private String studentName;
 			private int age;
@@ -48,5 +48,10 @@ public class Students {
 		}
 		public void setAddress(String address) {
 			this.address = address;
+		}
+		@Override
+		public String toString() {
+			return "Students [id=" + id + ", studentName=" + studentName + ", age=" + age + ", city=" + city
+					+ ", address=" + address + "]";
 		}
 }

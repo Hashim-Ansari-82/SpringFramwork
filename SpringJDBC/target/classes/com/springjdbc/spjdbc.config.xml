@@ -16,11 +16,15 @@
 												<property name="password" value="root"/>
 				</bean>
     
-    <bean class = "org.springframework.jdbc.core.JdbcTemplate" id = "jdbcTemplate" 
-            p:dataSource-ref="ds"/>
+<bean class = "org.springframework.jdbc.core.JdbcTemplate" id = "jdbcTemplate" >
+	     <property name="dataSource" ref ="ds"/>
+</bean>
             
-       <bean class ="com.springjdbc.dao.StudentDaoImp" name ="studentDao">
+    <bean class ="com.springjdbc.daoimpl.StudentDaoImp" name ="studentDao">
 								     <property name="template" ref ="jdbcTemplate"/>
+							</bean>
+       <bean class ="com.springjdbc.daoimpl.EmployeeDaoImp" name ="employeeDao">
+								     <property name="jdbcTemplate" ref ="jdbcTemplate"/>
 							</bean>
     
 </beans>

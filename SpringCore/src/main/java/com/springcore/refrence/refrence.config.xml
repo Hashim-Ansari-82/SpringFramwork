@@ -13,10 +13,10 @@
    p:name = "Afghani lion " p:propertie = "Lion is the king of forest" />
    
    <bean class = "com.springcore.refrence.Forest" name = "forest"
-    p:name="Amazon Jungle"
-	p:lion ="Lion is roar"
- 	p:lion-ref="lion1" 
- 	p:pond="Beautifull Pond"/>
+         p:name="Amazon Jungle"
+	         p:lion ="Lion is roar"
+ 								p:lion-ref="lion1" 
+									p:pond="Beautifull Pond"/>
     
 	 <!--  <property name="pond" value="This is Beautifull pond"/>
 	   <property name="name" value="Amazon Forest"/>
