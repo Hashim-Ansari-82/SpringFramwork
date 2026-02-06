@@ -13,7 +13,7 @@ public class PersonInsert {
 
 	public static void main(String[] args) throws Exception {
 		
-		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/springjdbc/spjdbc.config.xml");
 		PersonDao personDao = context.getBean("personDao",PersonDao.class);
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter Person Id");

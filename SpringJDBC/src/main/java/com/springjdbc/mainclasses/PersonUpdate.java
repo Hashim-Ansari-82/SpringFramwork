@@ -13,7 +13,7 @@ public class PersonUpdate {
 
 	public static void main(String[] args) throws Exception {
 		
-		ApplicationContext con=new ClassPathXmlApplicationContext("config.xml");
+		ApplicationContext con=new ClassPathXmlApplicationContext("com/springjdbc/spjdbc.config.xml");
 		PersonDao personDao = con.getBean("personDao",PersonDao.class);
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter Person You Can Change");

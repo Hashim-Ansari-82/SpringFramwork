@@ -26,5 +26,8 @@
        <bean class ="com.springjdbc.daoimpl.EmployeeDaoImp" name ="employeeDao">
 								     <property name="jdbcTemplate" ref ="jdbcTemplate"/>
 							</bean>
-    
+							
+    		<bean class="com.springjdbc.daoimpl.PersonDaoImp" name="personDao">
+									<property name="template" ref="jdbcTemplate"></property>
+								</bean>
 </beans>
