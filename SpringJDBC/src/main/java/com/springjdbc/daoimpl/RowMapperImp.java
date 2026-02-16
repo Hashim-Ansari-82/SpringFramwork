@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import org.springframework.jdbc.core.RowMapper;
 
 import com.springjdbc.entites.Employee;
+import com.springjdbc.entites.Person;
 import com.springjdbc.entites.Students;
 
 public class RowMapperImp implements RowMapper<Students>{
@@ -41,4 +42,17 @@ class RowMapperImp1 implements RowMapper<Employee>{
 		return employee;
 	}
 	
+}
+class RowMapperImp2 implements RowMapper<Person>{
+	
+	@Override
+	public Person mapRow(ResultSet rs, int rowNum) throws SQLException {
+	          Person person=new Person();
+	          person.setPerId(rs.getInt(1));
+	          person.setPerName(rs.getString(2));
+	          person.setAge(rs.getInt(3));
+	          person.setAddress(rs.getString(4));
+	          person.setCountry(rs.getString(5));
+		return person;
+	}	
 }

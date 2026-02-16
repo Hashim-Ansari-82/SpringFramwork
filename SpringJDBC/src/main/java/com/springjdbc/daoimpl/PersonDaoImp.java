@@ -1,5 +1,7 @@
 package com.springjdbc.daoimpl;
 
+import java.util.List;
+
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.springjdbc.dao.PersonDao;
@@ -18,6 +20,12 @@ public class PersonDaoImp implements PersonDao{
 			String query="update Person set perName=?, Age=?,Address=?,Country=?  where PerId=?";
 			int update = this.template.update(query,person.getPerName(),person.getAge(),person.getAddress(),person.getCountry(),person.getPerId());
 		return update;
+		}
+		@Override
+		public List<Person> fetch() {
+			String query="Select * from person";
+			List<Person> list = template.query(query,new RowMapperImp2());
+			return list;
 		}
 		public JdbcTemplate getTemplate() {
 			return template;

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+  
+    <bean class = "com.springcore.collection.Employee" name = "emp1" >
+		
+          <!--Value tag based Injection-->
+		
+		<property name="name" value = "Hashim Ansari"/>
+		<property name="phones">
+			<list>
+				<value>8657658798</value>
+				<value>8656456754</value>
+				<value>4365753456</value>
+				<value>4534634743</value>
+				<value>9784234545</value>
+				<null/>
+			</list>
+		</property>
+        
+		<property name="addresses">
+			<set>
+				<value>Mumbai</value>
+				<value>Maharastra</value>
+				<value>Banglore</value>
+				<value>Delhi</value>
+				<value>Pune</value>
+			</set>
+		</property>
+		
+		<property name="courses">
+			<map>
+				<entry key="Java" value=" 12 Month"/>
+				<entry key="Python" value=" 10 Month"/>
+				<entry key="HTML" value=" 2 Month"/>
+				<entry key="CSS" value=" 3 Month"/>
+				<entry key="Java Script" value=" 8 Month"/>
+			</map>
+		</property>
+		
+	<property name="prop">
+	     <props>
+	        <prop key="12">Hashim Ansari"</prop>
+	        <prop key="13">Arsalan Khan</prop>
+	        <prop key="14">Raiyyan Khan</prop>
+	        <prop key="15">Atamas Khan</prop>
+	        <prop key="16">Zuhaib Khan</prop>
+	    </props>
+  </property>
+		
+	</bean>
+	
+</beans>
