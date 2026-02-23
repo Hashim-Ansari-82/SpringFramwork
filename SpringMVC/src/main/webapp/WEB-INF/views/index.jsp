@@ -11,7 +11,7 @@
     <h1>This is home page</h1>
     <h1>home Controller</h1>
     <h1>forwarded by home</h1>
-    
+
     <%
    String name=(String) request.getAttribute("name");
     Integer id=(Integer) request.getAttribute("id");

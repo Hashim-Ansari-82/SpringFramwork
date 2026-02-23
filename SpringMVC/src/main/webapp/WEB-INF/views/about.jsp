@@ -7,8 +7,9 @@
 <title>About page</title>
 </head>
 <body>
-       <h1>This is home page</h1>
+       <h1>This is about page</h1>
     <h1>I am Hashim Ansari</h1>
     <h1>He is a Developer</h1>
+    <h1>${name}</h1>
 </body>
 </html>
