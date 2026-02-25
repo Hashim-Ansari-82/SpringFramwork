@@ -18,7 +18,7 @@
   					<tx:annotation-driven/>
 
     					<!-- controller scan -->
-    <context:component-scan base-package="com.mvcproject"/>
+    <context:component-scan base-package="com.searchapp"/>
 
    						 <!-- VERY IMPORTANT -->
     					<mvc:annotation-driven/>

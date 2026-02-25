@@ -5,15 +5,15 @@
                              http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <display-name>SpringMVC</display-name>
+    <display-name>SearchApp</display-name>
 
     <servlet>
-        <servlet-name>mvcproject</servlet-name>
+        <servlet-name>searchapp</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>mvcproject</servlet-name>
+        <servlet-name>searchapp</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
