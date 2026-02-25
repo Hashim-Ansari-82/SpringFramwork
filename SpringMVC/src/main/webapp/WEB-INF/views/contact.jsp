@@ -17,10 +17,7 @@
   <body>
     
    <div class = "container mt-5">
-        
-            <h1 class = "text-center">${Header}</h1>
-            <h5 class = "text-center">${desc}</h5>
-   
+             <h1 class = "container text-center">Registration Form</h1>
           <form action="processform" method="post">
              <div class="form-group">
 				    <label for="exampleInputEmail1">Email address</label>

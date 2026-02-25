@@ -1,5 +1,6 @@
 package com.springmvc.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -7,25 +8,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.springmvc.model.User;
+import com.springmvc.service.UserService;
 
 @Controller
 public class ContactController {
 
-	@ModelAttribute
-    public void commonModel(Model model) {
-    	model.addAttribute("Header", "Admission Form");
-		model.addAttribute("desc", "Only For Student");
-		System.out.println("Common Method");
-    }	
+	@Autowired
+	private UserService userService;
 	
 	@RequestMapping("/contact")
 	public String showForm() {
-		System.out.println("Contact Method");
 		  return "contact";
 	}
 	@RequestMapping(path ="/processform",method=RequestMethod.POST)
-	public String handleForm( @ModelAttribute User user) {
+	public String handleForm( @ModelAttribute User user,Model model) {
 		System.out.println(user);
+		if(user.getUserName().isBlank()) {
+			return "redirect:/contact";
+		}
+		int userCreated = this.userService.createUser(user);
+		model.addAttribute("msg","User Created Successfully "+userCreated);
 		return "success";	
 	}
 }
