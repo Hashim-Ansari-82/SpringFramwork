@@ -28,4 +28,13 @@
 	<!--<bean class = "com.springcore.autowirexml.Employee" name="emp" autowire="byType"/>-->
 	<bean class = "com.springcore.autowirexml.Employee" name="emp" autowire="constructor"/>
 		
+		<bean class="com.springcore.autowirexml.Certificate" name="cer">
+		     <property name="certiNo" value="435243"/>
+		     <property name="name" value="Python Developer"/>
+		     <property name="course" value="Full Stack Developer"/>
+		     <property name="cost" value="4000"/>
+		</bean>
+		
+		<bean class = "com.springcore.autowirexml.Student" name="student" autowire="byType"/>
+		
 </beans>

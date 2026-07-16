@@ -1,7 +1,12 @@
 package com.springcore.config;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+import lombok.ToString;
+
+@Component
+@ToString
 public class Student {
   
 		@Value("12")
@@ -17,8 +22,4 @@ public class Student {
 		@Value("272125")
 		private int pinCode;
 		
-		public void detail() {
-			System.out.println("ID : "+id+"\nNAME : "+name+"\nAGE : "
-		    +age+"\nADDRESS : "+Address+"\nSTATE  : "+state+"\nPINCODE : "+pinCode);
-		}	
  }

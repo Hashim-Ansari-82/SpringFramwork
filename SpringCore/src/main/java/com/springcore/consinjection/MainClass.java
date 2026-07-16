@@ -7,7 +7,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
-		ApplicationContext context=new ClassPathXmlApplicationContext("com/springcore/consinjection/ci.config.xml");
+		ApplicationContext context=new ClassPathXmlApplicationContext("consinjection.xml");
 		Person p = (Person)context.getBean("person");
 		System.out.println(p);
 		

@@ -7,7 +7,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
-		AbstractApplicationContext context=new ClassPathXmlApplicationContext("com/springcore/lifecycle/lifecycle.config.xml");
+		AbstractApplicationContext context=new ClassPathXmlApplicationContext("lifecycle.config.xml");
 	    Mango m=(Mango) context.getBean("mango");
 	    System.out.println(m);
 	    context.registerShutdownHook();

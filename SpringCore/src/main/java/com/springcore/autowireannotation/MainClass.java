@@ -7,7 +7,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 	
-	ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/autowireannotation/autowire.config.xml");
+	ApplicationContext context = new ClassPathXmlApplicationContext("annotation.config.xml");
 	
 	 Employee bean = context.getBean("employee",Employee.class);
 	 System.out.println(bean);

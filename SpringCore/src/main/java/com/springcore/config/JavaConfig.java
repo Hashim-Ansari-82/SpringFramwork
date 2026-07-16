@@ -5,12 +5,17 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration 
-@ComponentScan(basePackages  = "com.springcore.config")
+@ComponentScan(basePackages  = {"com.springcore.config"})
 public class JavaConfig {
+	
+
+	@Bean("rabbit")
+	public RabbitEntity getRabbit() {
 		
-		@Bean({"student","temp","stud"})
-	     public Student getStudent() {
-		    	 Student s=new Student();
-		    	 return s;
-	     }
+		RabbitEntity rabbit = new RabbitEntity();
+		rabbit.getAge();
+		rabbit.getColor();
+		rabbit.getFood();
+		return rabbit;
+	}
 }

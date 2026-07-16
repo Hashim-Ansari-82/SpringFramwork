@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainClass {
      public static void main(String[] args) {
 		
-     ApplicationContext context=new ClassPathXmlApplicationContext("com/springcore/scope/scope.config.xml");
+     ApplicationContext context=new ClassPathXmlApplicationContext("scope.config.xml");
 	
 		/* Scope with Annotation */
      

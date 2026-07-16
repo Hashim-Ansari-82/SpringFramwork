@@ -15,7 +15,7 @@ public class HomeController {
 
     @RequestMapping(path = "/home", method=RequestMethod.GET)
     public String home(Model model) {
-    	System.out.println("this is home");
+    	System.out.println("This is home");
     	model.addAttribute("name","Hashim Ansari");
     	model.addAttribute("id",12);
     	List<String> friends=new ArrayList<String>();
@@ -30,7 +30,7 @@ public class HomeController {
     }
     @RequestMapping("/about")
     public String about(Model model) {
-    	System.out.println("about programmer");
+    	System.out.println("About Programmer");
     	model.addAttribute("name" ,"HR Ansari");
     	return "about";
     }

@@ -3,7 +3,10 @@ package com.springcore.config;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import lombok.ToString;
+
 @Component
+@ToString
 public class Samosa {
 
 	@Value("Banwari Samosa Wala")
@@ -16,12 +19,11 @@ public class Samosa {
 	private String samosaTest;
 	@Value(" Rs 10")
 	private String samosaPrice;
+
+//	public void detail() {
+//		System.out.println("Samosa [shopName=" + shopName + ", shopAddress=" + shopAddress + ", useOil=" + useOil + ", samosaTest="
+//				+ samosaTest + ", samosaPrice=" + samosaPrice + "]");
+//	}
 	
-	public void detail() {
-		System.out.println("Shop Name = "+shopName);
-		System.out.println("Shop Address = "+shopAddress);
-		System.out.println("Use Oil = "+useOil);
-		System.out.println("Samosa Test = "+samosaTest);
-		System.out.println("Samosa Price = "+samosaPrice);
-	}
+	
 }

@@ -7,7 +7,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
-	ApplicationContext context=new	ClassPathXmlApplicationContext("com/springcore/standalon/standalon.config.xml");
+	ApplicationContext context=new	ClassPathXmlApplicationContext("standalon.config.xml");
 	
 	 Person per = context.getBean("person",Person.class);
 	 System.out.println(per);

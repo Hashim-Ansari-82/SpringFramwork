@@ -7,7 +7,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 
-	ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/spel/spel.config.xml");
+	ApplicationContext context = new ClassPathXmlApplicationContext("spel.config.xml");
 	MethematicsExpression m1 = context.getBean("methematicsExpression",MethematicsExpression.class);
 	
 	System.out.println(m1);

@@ -57,4 +57,36 @@
 		
 	</bean>
 	
+	<bean class="com.springcore.collection.College" name="college">
+	   <property name="student">
+	     <map>
+	     <entry key="434" value="Danish Khan"/>
+	     <entry key="443" value="Shahroz Khan"/>
+	     <entry key="476" value="Pramod Kumar"/>
+	     <entry key="453" value="Nandlal Kumar"/>
+	     <entry key="489" value="Sharukh Khan"/>
+	     </map>
+	   </property>
+	   
+	   <property name="teacher">
+	       <props>
+	       <prop key="6834">Rahul Mehra</prop>
+	       <prop key="6543">Sushil Malhotra</prop>
+	       <prop key="6854">Helmeta Mehra</prop>
+	       <prop key="6846">Shalu Khurana</prop>
+	       <prop key="6876">Isha Chauhan</prop>
+	       </props>
+	   </property>
+	   <property name="peon">
+	     <list>
+	       <value>Rana</value>
+	       <value>Sana</value>
+	       <value>Khana</value>
+	       <value>Sultan</value>
+	       <value>Kailash</value>
+	     </list>
+	   </property>
+	</bean>
+	
+	
 </beans>

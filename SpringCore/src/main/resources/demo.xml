@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+  
+          <bean class="com.springcore.demo.Student" name="student">
+          
+               <!-- <property name="studentId" value="3525"/>
+               <property name="studentName" value="Hashim Ansari"/>
+               <property name="studentAddress" value="Sakinaka"/>
+               <property name="studentAge" value="19"/> -->
+               <constructor-arg name="studentId" value="3542"/>
+               <constructor-arg name="studentName" value="Hashim Ansari"/>
+               <constructor-arg name="studentAddress" value="Sakinaka"/>
+               <constructor-arg name="studentAge" value="19"/>
+          </bean>
+          
+          <bean class="com.springcore.demo.Horse" name="horse" 
+          p:age="40" p:food="Chana" p:speed="30 Km/h"/>
+          
+          <bean class="com.springcore.demo.Lion" name="lion" 
+          c:type="Omnivorus" c:food="Meat" c:position="King of Animal"/>
+
+</beans>
